@@ -31,17 +31,17 @@ df_tags['Minute'] = df_tags['timestamp'].dt.minute
 df_tags['Second'] = df_tags['timestamp'].dt.second
 st.table(df_tags.head(x))
 
-#rating table
-st.header("Ratings table data")
-df_rating = pd.read_csv(r"C:\Users\91837\Downloads\archive\rating.csv")
-st.table(df_rating.head(x))
+# #rating table
+# st.header("Ratings table data")
+# df_rating = pd.read_csv(r"C:\Users\91837\Downloads\archive\rating.csv")
+# st.table(df_rating.head(x))
 
-# Plot Histogram for Ratings
-st.subheader("Histogram of Ratings")
-fig, ax = plt.subplots()
-ax.hist(df_rating['rating'])
-ax.set_xlabel("Ratings")
-ax.set_ylabel("Frequency")
-ax.set_title("Distribution of Ratings")
-st.pyplot(fig)
+# # Plot Histogram for Ratings
+# st.subheader("Histogram of Ratings")
+# fig, ax = plt.subplots()
+# ax.hist(df_rating['rating'])
+# ax.set_xlabel("Ratings")
+# ax.set_ylabel("Frequency")
+# ax.set_title("Distribution of Ratings")
+# st.pyplot(fig)
 
