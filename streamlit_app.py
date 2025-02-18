@@ -14,12 +14,12 @@ x = st.slider("Choose the number of records to be displayed: ", min_value=1, max
 
 #movies table
 st.header("Movies table data")
-df_movies = pd.read_csv(r"C:\Users\91837\Downloads\archive\movie.csv")
+df_movies = pd.read_csv("movie.csv")
 st.table(df_movies.head(x))
 
 #tags table
 st.header("Tags table data")
-df_tags = pd.read_csv(r"C:\Users\91837\Downloads\archive\tag.csv")
+df_tags = pd.read_csv("tag.csv")
 
 # Convert timestamp column to datetime format and extract components
 df_tags['timestamp'] = pd.to_datetime(df_tags['timestamp'])
